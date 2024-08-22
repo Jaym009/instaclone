@@ -32,7 +32,7 @@ const Signup = () => {
         // console.log(input)
         try {
             setLoading(true)
-            const res = await axios.post('http://localhost:8000/api/v2/user/register', input, {
+            const res = await axios.post('https://instaclone-o3w0.onrender.com/api/v2/user/register', input, {
                 headers: {
                     'Content-Type': 'application/json'
                 },
@@ -60,7 +60,6 @@ const Signup = () => {
             <form onSubmit={signupHandler} className='shadow-lg flex flex-col gap-5 p-8 '>
                 <div className='my-4'>
                 <h1 className='my-8 pl-12 font-bold text-xl flex items-center'>
-                <img src="/src/assets/instagram logo.jpg" alt="Instagram Logo" className='w-6 h-6 mr-2' />
                     Instagram</h1>
                     <p className='text-sm text-center'>Signup to see photos & videos from your friends</p>
                 </div>

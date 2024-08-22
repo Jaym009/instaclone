@@ -74,7 +74,6 @@ const LeftSidebar = () => {
         <div className='fixed top-0 z-10 left-0 px-4 border-r border-gray-300 w-[16%] h-screen'>
             <div className='flex flex-col'>
                 <h1 className='my-8 pl-3 font-bold text-xl flex items-center'>
-                <img src="/src/assets/instagram logo.jpg" alt="Instagram Logo" className='w-6 h-6 mr-2' />
                     Instagram</h1>
                 <div>
                     {

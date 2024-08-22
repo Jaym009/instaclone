@@ -4,8 +4,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import MainLayout from './components/MainLayout'
 import Home from './components/Home'
 import Profile from './components/Profile'
-import Posts from './components/Posts'
-import Feed from './components/feed'
 import EditProfile from './components/EditProfile'
 import ChatPage from './components/ChatPage'
 import { io } from "socket.io-client"
@@ -14,7 +12,6 @@ import { useDispatch, useSelector } from 'react-redux'
 import { setSocket } from './redux/socketSlice'
 import { setOnlineUsers } from './redux/chatSlice'
 import { setLikeNotification } from './redux/rtnslice'
-import { setMessageNotification } from './redux/rtmslice'
 import ProtectedRoute from './components/ProtectedRoute'
 
 const browserRouter = createBrowserRouter([
